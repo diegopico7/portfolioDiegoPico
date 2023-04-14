@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="parallax.css">
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+
+    <div class="lista-header">
+      <ul class="listas-header">
+        <li><a href=""> Acerca de mi </a></li>
+        <li><a href=""> Servicios </a></li>
+        <li><a href="">Contacto</a></li>
+        <li><a href="">Canal Youtube</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div data-anijs="if: click, do: rollIn animated, to: $children .container-box">
+    <section class=" box1 container-box" id="section1">
+
+      <div class="contenedor-info">
+        <img class="foto-perfil" src="/img/perfil/perfilredondo.png" alt="">
+      </div>
+      <div class="contenedor-nombres">
+        <h1 class="text-info"> Diego Pico </h1>
+
+        <h4 class="text-info2">Desarrollador FullStack</h4>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="box2" id="section2">
+    <h2 class="titulo-acerca"> Acerca de mí </h2>
+    <article class="contenedor-acerca">
+      <img src="/img/perfil/perfil22.png" alt="" width="100px" height="auto">
+      <p class="acerca-de-mi">Soy Diego Pico desarrollador fullstack, hace 1 año que trabajo como freelancer, con base
+        en
+        Argentina. Amo programar, buscar soluciones, automatizar ideas, <b> ¡si lo piensas lo puedes programar!</b>,
+        ¡una
+        mente sana y libre crea mucho mas que una mente saturada!, comence este hermoso camino de la programación en el
+        2022 con curso de fullstack en la Facultad Tecnológica Nacional, y de a poco fui acomodando mis empresas hasta
+        lograr dedicarme full time a esta profesión que me apasiona, a parte de
+        programar también disfruto mucho la vida al aire libre,
+        caminar, andar en bici y por supuesto jugar al futbol. </p>
+    </article>
+
+  </section>
+
+
+
+
+  <section class="box3" id="section3">
+    <h2 class="titulo-misproyectos">Mis Proyectos e ideas </h2>
+    <div class="contenedor-proyectos">
+      <article class="proyecto1">
+        <div>
+          <img class="img-proyecto" src="/img/ferreteria.png" alt="">
+        </div>
+        <div class="titulo-descripcion">
+          <h3 class="titulo-proyecto">Página comercio</h3>
+          <span class="descripcion-proyecto">Página estática, comercio donde se muestran los productos un poco de
+            historia del negocio a pedido del cliente
+            y formulario de contacto. </span>
+          <br>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn1 btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver demo
+          </button>
+          <button type="button" class="btn1 btn-primary">
+            <a class="link-proyecto" href="https://elcometa.000webhostapp.com/index.html" target="_blank"
+              rel="notfollow">Link</a>
+          </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Ferreteria El Cometa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Página de comercio, estática realizada con htlm, css, javascript
+              </div>
+              <video src="/video/paginaferreteria.mp4" controls muted></video>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary"><a class="link-proyecto"
+                    href="https://elcometa.000webhostapp.com/index.html" target="_blank"
+                    rel="notfollow">Link</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+
+
+      <article class="proyecto1">
+        <div>
+          <img class="img-proyecto" src="/img/tucprogrammobil.png" alt="">
+        </div>
+        <div class="titulo-descripcion">
+          <h3 class="titulo-proyecto">Página Academia de programación</h3>
+          <span class="descripcion-proyecto">Página web, de academia de programación, el cliente nos pidio información
+            clara de los objetivos de la academia y por sobre todas las cosas medios de comunicación al alcance del
+            usuario.</span>
+          <br>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn1 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Ver demo
+          </button>
+          <button type="button" class="btn1 btn-primary">
+            <a class="link-proyecto" href="https://elcometa.000webhostapp.com/index.html" target="_blank"
+              rel="notfollow">Link</a>
+          </button>
+
+          <!-- Modal para que no quede lo del modal anterior hay q cambiar el id exampleModal y los examplemodallabel-->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel2">Tucprogram</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Academia de programación
+                </div>
+                <video src="/video/tucprogrampagina.mp4" controls muted preload="auto"></video>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary"><a class="link-proyecto"
+                      href="http://www.tucprogram.online" target="_blank" rel="notfollow">Link</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </article>
+
+
+      <!-- modal3 -->
+      <article class="proyecto1">
+        <div>
+          <img class="img-proyecto" src="/img/tucprogrammobil.png" alt="">
+        </div>
+        <div class="titulo-descripcion">
+          <h3 class="titulo-proyecto">Portfolio Pico Diego</h3>
+          <span class="descripcion-proyecto">Página web, Pico Diego realizada con html css js </span>
+          <br>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn1 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Ver demo
+          </button>
+          <button type="button" id="btn2" class="btn1 btn-primary">
+            <a class="link-proyecto" href="index.html" target="_blank" rel="notfollow">Link</a>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel3">Pico Diego</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Portafolio realizado con html, css, boostrap, y javascript.
+                </div>
+                <video src="/video/tucprogrampagina.mp4" controls muted preload="auto"></video>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary"><a class="link-proyecto" href="index.html"
+                      target="_blank" rel="notfollow">Link</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </article>
+
+
+
+    </div>
+
+  </section>
+
+  <section class="box4" id="section3">
+    <h2 class="titulo-contacto">Contactame</h2>
+    <article class="contacto">
+      <form class="formulario-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Juan Perez">
+        <label for="mail">Email </label>
+        <input type="mail" placeholder="tucprogram@gmail.com">
+        <label for="textarea">Comentario o sugerencia</label>
+        <textarea name="textarea" id="" cols="30" rows="10"
+          placeholder="dejame tu comentario, sugerencia, duda o pedime cotización sin compromiso"></textarea>
+        <div class="botones-contacto">
+          <button class="btn-contacto" type="submit">Enviar</button>
+          <button class="btn-contacto" type="reset">Borrar</button>
+        </div>
+      </form>
+
+
+    </article>
+
+  </section>
+
+  <a href="index.html">inicio</a>
+
+
+  <script src="/javascript.js"></script>
+  <script src="anijs-min.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
