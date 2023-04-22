@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum</title>
+
+  <link rel="stylesheet" href="cv.css">
+</head>
+
+<body>
+  <header>
+
+    <nav class="lista-header" id="navbar">
+      <ul class="listas-header">
+        <li><a id="lista-enlace" href="/index.html"> Inicio </a></li>
+        <li><a id="lista-enlace1" href="/parallax.html">Portfolio</a></li>
+        <li><a href="/cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="idiomas">
+    <button type="button" id="btn-idioma-en" class="btn-idioma" onclick="english()">English</button>
+    <button type="button" id="btn-idioma-es" class="btn-idioma" onclick="espanish()">Espanish</button>
+  </section>
+  <h1 class=" titulo-cv">Curriculum Vitae</h1>
+  <article class="contenedor-cv">
+    <img src="/img/curriculumabril2023.png" alt="curriculum Vitae Pico Diego" class="cv cv-es show" id="img-cv-es">
+    <img src="/img/curriculumdiegoabrilIngles2023.png" alt="curriculum Vitae Pico Diego" class="cv cv-en show"
+      id="img-cv-en">
+
+  </article>
+
+
+  <div class="contenedor-btn-cv">
+
+    <button class="boton-cv" id="btn-cv-en">
+      <a class="cv-pdf" href="/documentos/curriculumdiegoabril2023ingles.pdf" target="_blank">Download CV
+        English</a></button>
+    <button class="boton-cv" id="btn-cv-es2">
+      <a class="cv-pdf" href="/documentos/curriculumdiegoabril2023.pdf" target="_blank">Descarga CV
+        Español</a></button>
+  </div>
+
+
+
+
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
