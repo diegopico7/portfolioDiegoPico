@@ -27,6 +27,7 @@ function scroll1() {
   let animacion = document.getElementById("animacion1");
   let animacion2 = document.getElementById("animacion2");
   let animacion3 = document.getElementById("animacion3");
+  let animacion4 = document.getElementById("animacion4");
   let positionObj1 = animacion.getBoundingClientRect().top;
 
   let tamanioPantalla = window.innerHeight / 2;
@@ -34,6 +35,7 @@ function scroll1() {
     animacion.style.animation = "mover 1s ease-out ";
     animacion2.style.animation = "mover 1.5s ease-out";
     animacion3.style.animation = "mover 1s ease-out";
+    animacion4.style.animation = "mover 0.8s ease-out";
   }
 }
 
@@ -85,12 +87,16 @@ const proyectosEspanish2 = document.getElementById("proyectos-es2");
 const proyectosEspanish3 = document.getElementById("proyectos-es3");
 const proyectosEspanish4 = document.getElementById("proyectos-es4");
 const proyectosEspanish5 = document.getElementById("proyectos-es5");
+const proyectosEspanish6 = document.getElementById("proyectos-es6");
+const proyectosEspanish7 = document.getElementById("proyectos-es7");
 const proyectosEnglish = document.getElementById("proyectos-en");
 const proyectosEnglish1 = document.getElementById("proyectos-en1");
 const proyectosEnglish2 = document.getElementById("proyectos-en2");
 const proyectosEnglish3 = document.getElementById("proyectos-en3");
 const proyectosEnglish4 = document.getElementById("proyectos-en4");
 const proyectosEnglish5 = document.getElementById("proyectos-en5");
+const proyectosEnglish6 = document.getElementById("proyectos-en6");
+const proyectosEnglish7 = document.getElementById("proyectos-en7");
 
 btnspanish.addEventListener("click", () => {
   console.log("hola");
@@ -113,11 +119,16 @@ btnspanish.addEventListener("click", () => {
   proyectosEspanish3.classList.remove("proyectos-show");
   proyectosEspanish4.classList.remove("proyectos-show");
   proyectosEspanish5.classList.remove("proyectos-show");
+  proyectosEspanish6.classList.remove("proyectos-show");
+  proyectosEspanish7.classList.remove("proyectos-show");
   proyectosEnglish1.classList.add("proyectos-show");
   proyectosEnglish2.classList.add("proyectos-show");
   proyectosEnglish3.classList.add("proyectos-show");
   proyectosEnglish4.classList.add("proyectos-show");
   proyectosEnglish5.classList.add("proyectos-show");
+  proyectosEnglish6.classList.add("proyectos-show");
+  proyectosEnglish7.classList.add("proyectos-show");
+
   serviciosEspanish();
   contactoEsp();
   cambiarIdiomaf("es");
@@ -143,12 +154,16 @@ bntenglish.addEventListener("click", () => {
   proyectosEspanish3.classList.add("proyectos-show");
   proyectosEspanish4.classList.add("proyectos-show");
   proyectosEspanish5.classList.add("proyectos-show");
+  proyectosEspanish6.classList.add("proyectos-show");
+  proyectosEspanish7.classList.add("proyectos-show");
   proyectosEnglish.classList.remove("proyectos-show");
   proyectosEnglish1.classList.remove("proyectos-show");
   proyectosEnglish2.classList.remove("proyectos-show");
   proyectosEnglish3.classList.remove("proyectos-show");
   proyectosEnglish4.classList.remove("proyectos-show");
   proyectosEnglish5.classList.remove("proyectos-show");
+  proyectosEnglish6.classList.remove("proyectos-show");
+  proyectosEnglish7.classList.remove("proyectos-show");
   serviciosEnglish();
   contactoEng();
   cambiarIdiomaf("en");
@@ -217,40 +232,6 @@ function contactoEng() {
   contactoEn4.classList.remove("contacto-show");
   contactoEn5.classList.remove("contacto-show");
 }
-
-//cambiar idioma footer chaptgpt
-// var textoContactoEsp = "Teléfono: 555-1234";
-// var textoCorreoEsp = "Correo electrónico: info@miempresa.com";
-// var textoAcercaDeEsp =
-//   "Somos una empresa dedicada a la venta de productos de alta calidad.";
-
-// var textoContactoIng = "Phone: 555-1234";
-// var textoCorreoIng = "Email: info@mycompany.com";
-// var textoAcercaDeIng =
-//   "We are a company dedicated to selling high-quality products.";
-
-// document.getElementById("btn-espanol").addEventListener("click", function () {
-//   cambiarIdioma("es");
-// });
-
-// document.getElementById("btn-ingles").addEventListener("click", function () {
-//   cambiarIdioma("en");
-// });
-// function cambiarIdioma(idioma) {
-//   var textoContacto = document.querySelectorAll("footer p")[0];
-//   var textoCorreo = document.querySelectorAll("footer p")[1];
-//   var textoAcercaDe = document.querySelector("footer div:nth-of-type(2) p");
-
-//   if (idioma === "es") {
-//     textoContacto.textContent = textoContactoEsp;
-//     textoCorreo.textContent = textoCorreoEsp;
-//     textoAcercaDe.textContent = textoAcercaDeEsp;
-//   } else {
-//     textoContacto.textContent = textoContactoIng;
-//     textoCorreo.textContent = textoCorreoIng;
-//     textoAcercaDe.textContent = textoAcercaDeIng;
-//   }
-// }
 
 const adres = document.getElementById("footer-es");
 const adren = document.getElementById("footer-en");
