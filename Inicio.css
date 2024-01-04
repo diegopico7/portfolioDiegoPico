@@ -194,6 +194,7 @@ header {
   padding: 10px;
   margin: 10px;
   color: #000;
+  font-weight: 700;
 }
 
 .contenedor-skills {
@@ -206,6 +207,7 @@ header {
 .contenedor-skills img {
   width: 100px;
   height: auto;
+  background: rgba(206, 220, 231, 0.2);
 }
 
 .box3 {
