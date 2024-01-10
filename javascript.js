@@ -244,3 +244,6 @@ function cambiarIdiomaf(idioma) {
     adren.classList.remove("footer-show");
   }
 }
+
+//burger
+const toggleMenu = () => document.body.classList.toggle("open");
