@@ -226,7 +226,7 @@ body.open .menu-burger a {
 
 
 .box1 {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-image: url(./img/fondos/5.png);
   background-blend-mode: darken;
@@ -288,6 +288,7 @@ body.open .menu-burger a {
   height: 100%;
   background-color: #141313;
 text-align: center;
+
 }
 
 .titulo-acerca {
@@ -300,7 +301,7 @@ text-align: center;
   text-align: center;
   color: #e4ecf4;
   padding: 10px;
-  margin: 55px 0 ;
+  
 }
 .contenedor-acerca {
   width: 90%;
@@ -383,6 +384,10 @@ text-align: center;
 }
 
 .titulo-misproyectos {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
   text-align: center;
   color: #fff;
   margin-top: 60px;
@@ -496,13 +501,12 @@ text-align: center;
 .datos-servicios {
   font-family: Helvetica;
   font-weight: 500;  
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: inline-block;
-  width: 100%;
-height: auto;
+  height: auto;
   color: #fff;
   padding: 10px;
-  margin: 35px 10px;
+  margin: 35px 20px;
   text-align: start;
 }
 
@@ -510,10 +514,6 @@ height: auto;
   font-weight: bold;
   color: #2494ef;
 }
-
-
-
-
 
 /*galeria1*/
 .background-galeria {
@@ -560,7 +560,7 @@ height: auto;
 
 @media (max-width: 680px) {
   .datos-servicios{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .acerca-de-mi{
     font-size: 1.5rem;

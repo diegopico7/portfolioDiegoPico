@@ -28,6 +28,8 @@ function scroll1() {
   let animacion2 = document.getElementById("animacion2");
   let animacion3 = document.getElementById("animacion3");
   let animacion4 = document.getElementById("animacion4");
+  let animacion5 = document.getElementById("animacion5");
+  let animacion6 = document.getElementById("animacion6");
   let positionObj1 = animacion.getBoundingClientRect().top;
 
   let tamanioPantalla = window.innerHeight / 2;
@@ -36,7 +38,28 @@ function scroll1() {
     animacion2.style.animation = "mover 1.5s ease-out";
     animacion3.style.animation = "mover 1s ease-out";
     animacion4.style.animation = "mover 0.8s ease-out";
+    animacion5.style.animation = "mover 1s ease-out";
+    animacion6.style.animation = "mover 0.8s ease-out";
   }
+}
+//idioma presentacion
+
+const titulo2es = document.getElementById("animacion3")
+const titulo3es = document.getElementById("animacion4")
+const titulo2en = document.getElementById("animacion5")
+const titulo3en = document.getElementById("animacion6")
+
+function titleEspanish (){
+  titulo2en.style.display = "none";
+  titulo3en.style.display = "none";
+  titulo2es.style.display="block";
+  titulo3es.style.display="block";
+}
+function titleEnglish (){
+  titulo2es.style.display="none";
+  titulo3es.style.display="none";
+  titulo2en.style.display="block"
+  titulo3en.style.display="block"
 }
 
 //cambiar idioma curriculum
@@ -89,6 +112,8 @@ const proyectosEspanish4 = document.getElementById("proyectos-es4");
 const proyectosEspanish5 = document.getElementById("proyectos-es5");
 const proyectosEspanish6 = document.getElementById("proyectos-es6");
 const proyectosEspanish7 = document.getElementById("proyectos-es7");
+const proyectosEspanish8 = document.getElementById("proyectos-es8");
+const proyectosEspanish9 = document.getElementById("proyectos-es9");
 const proyectosEnglish = document.getElementById("proyectos-en");
 const proyectosEnglish1 = document.getElementById("proyectos-en1");
 const proyectosEnglish2 = document.getElementById("proyectos-en2");
@@ -97,6 +122,8 @@ const proyectosEnglish4 = document.getElementById("proyectos-en4");
 const proyectosEnglish5 = document.getElementById("proyectos-en5");
 const proyectosEnglish6 = document.getElementById("proyectos-en6");
 const proyectosEnglish7 = document.getElementById("proyectos-en7");
+const proyectosEnglish8 = document.getElementById("proyectos-en8");
+const proyectosEnglish9 = document.getElementById("proyectos-en9");
 
 btnspanish.addEventListener("click", () => {
   console.log("hola");
@@ -121,6 +148,8 @@ btnspanish.addEventListener("click", () => {
   proyectosEspanish5.classList.remove("proyectos-show");
   proyectosEspanish6.classList.remove("proyectos-show");
   proyectosEspanish7.classList.remove("proyectos-show");
+  proyectosEspanish8.classList.remove("proyectos-show");
+  proyectosEspanish9.classList.remove("proyectos-show");
   proyectosEnglish1.classList.add("proyectos-show");
   proyectosEnglish2.classList.add("proyectos-show");
   proyectosEnglish3.classList.add("proyectos-show");
@@ -128,7 +157,10 @@ btnspanish.addEventListener("click", () => {
   proyectosEnglish5.classList.add("proyectos-show");
   proyectosEnglish6.classList.add("proyectos-show");
   proyectosEnglish7.classList.add("proyectos-show");
+  proyectosEnglish8.classList.add("proyectos-show");
+  proyectosEnglish9.classList.add("proyectos-show");
 
+  titleEspanish();
   serviciosEspanish();
   contactoEsp();
   cambiarIdiomaf("es");
@@ -156,6 +188,8 @@ bntenglish.addEventListener("click", () => {
   proyectosEspanish5.classList.add("proyectos-show");
   proyectosEspanish6.classList.add("proyectos-show");
   proyectosEspanish7.classList.add("proyectos-show");
+  proyectosEspanish8.classList.add("proyectos-show");
+  proyectosEspanish9.classList.add("proyectos-show");
   proyectosEnglish.classList.remove("proyectos-show");
   proyectosEnglish1.classList.remove("proyectos-show");
   proyectosEnglish2.classList.remove("proyectos-show");
@@ -164,6 +198,9 @@ bntenglish.addEventListener("click", () => {
   proyectosEnglish5.classList.remove("proyectos-show");
   proyectosEnglish6.classList.remove("proyectos-show");
   proyectosEnglish7.classList.remove("proyectos-show");
+  proyectosEnglish8.classList.remove("proyectos-show");
+  proyectosEnglish9.classList.remove("proyectos-show");
+  titleEnglish();
   serviciosEnglish();
   contactoEng();
   cambiarIdiomaf("en");
