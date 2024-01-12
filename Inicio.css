@@ -63,14 +63,13 @@ header {
   display: none;
 }
 
-.text-info11{
-  font-family: 'Lobster', sans-serif !important;
+.text-info11 {
+  font-family: "Lobster", sans-serif !important;
   font-weight: 750;
 }
 .text-info2 {
-  font-family: 'Lobster', sans-serif !important;
+  font-family: "Lobster", sans-serif !important;
   font-weight: 650;
-  
 }
 
 /*burger*/
@@ -79,19 +78,16 @@ header {
   padding: 0;
   background: transparent;
   cursor: pointer;
-  
 }
 .burger,
 .menu-burger {
   position: fixed;
-  
 }
 
 .burger {
   z-index: 4;
   top: 30px;
-  
-  
+
   display: grid;
   place-items: center;
   width: 88px;
@@ -170,8 +166,6 @@ body .menu-burger nav > a:hover {
   opacity: 0;
   cursor: pointer;
   transition: 0.4s;
-  
-  
 }
 
 .menu-burger a::after {
@@ -188,7 +182,6 @@ body .menu-burger nav > a:hover {
   opacity: 0;
   rotate: 45deg;
   transition: 0.3s;
- 
 }
 
 .menu-burger a:hover::after {
@@ -212,18 +205,13 @@ body.open .menu-burger a {
 
 @media (max-width: 680px) {
   .burger {
-    display: grid ;
-  
+    display: grid;
   }
 
-  .listas-header{
+  .listas-header {
     display: none;
   }
 }
-
-
-
-
 
 .box1 {
   height: 90vh;
@@ -278,22 +266,19 @@ body.open .menu-burger a {
   .text-info2 {
     font-size: 25px;
   }
-  .foto-perfil{
+  .foto-perfil {
     height: 230px;
   }
- 
 }
 .box2 {
   width: 100%;
   height: 100%;
   background-color: #141313;
-text-align: center;
-
+  text-align: center;
 }
 
 .titulo-acerca {
-  
-  font-family: 'Dela Gothic One' ;
+  font-family: "Dela Gothic One";
   font-size: 2rem;
   letter-spacing: 0.4rem;
   font-weight: 700;
@@ -301,31 +286,27 @@ text-align: center;
   text-align: center;
   color: #e4ecf4;
   padding: 10px;
-  
 }
 .contenedor-acerca {
   width: 90%;
   height: auto;
   margin: 0 auto;
-
 }
-
 
 .acerca-show {
   display: none;
 }
 
-
 .acerca-de-mi {
-   font-family: 'Caveat', cursive;;
-   font-weight: 400;  
-   font-size: 1.7rem;
- width: 100%;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-size: 1.7rem;
+  width: 100%;
   height: auto;
   padding: 10px;
   margin: 35px 0;
   color: #e5e3e3;
-  
+
   text-align: start;
 }
 
@@ -384,7 +365,7 @@ text-align: center;
 }
 
 .titulo-misproyectos {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5rem;
   font-size: 2.5rem;
@@ -483,11 +464,10 @@ text-align: center;
 .contenedor-servicios {
   width: 100%;
   height: auto;
-  
 }
 
-.titulo-servicios{
-  font-family: 'Bebas Neue', sans-serif;
+.titulo-servicios {
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5rem;
   font-size: 2.5rem;
@@ -495,12 +475,12 @@ text-align: center;
   color: #fff;
 
   margin-bottom: 35px;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .datos-servicios {
   font-family: Helvetica;
-  font-weight: 500;  
+  font-weight: 500;
   font-size: 1.4rem;
   display: inline-block;
   height: auto;
@@ -510,7 +490,7 @@ text-align: center;
   text-align: start;
 }
 
-.descripcion-idea{
+.descripcion-idea {
   font-weight: bold;
   color: #2494ef;
 }
@@ -554,43 +534,43 @@ text-align: center;
 
 .card-galeria img {
   height: 260px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
   border-radius: 4px;
 }
 
 @media (max-width: 680px) {
-  .datos-servicios{
+  .datos-servicios {
     font-size: 1.2rem;
   }
-  .acerca-de-mi{
+  .acerca-de-mi {
     font-size: 1.5rem;
   }
- .background-galeria {
+  .background-galeria {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
     height: auto;
-    
   }
   .gallery-galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     align-items: center;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
     margin-bottom: 55px;
   }
   .card-galeria:not(:first-child) {
     margin-left: 0;
   }
-  
+
   .card-galeria:hover {
     transform: translateY(0);
     font-weight: bold;
     cursor: pointer;
   }
-  
+
   .card-galeria:hover ~ .card-galeria {
     left: 0px;
   }
@@ -629,10 +609,8 @@ text-align: center;
   align-items: center;
 }
 
-
-
 .titulo-contacto {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5rem;
   font-size: 2.5rem;
@@ -640,7 +618,6 @@ text-align: center;
   color: #fff;
   margin-top: 35px;
   margin-bottom: 10px;
-  
 }
 
 .contacto {
@@ -649,6 +626,13 @@ text-align: center;
   display: flex;
   justify-content: center;
 }
+
+.link-cv {
+  font-weight: bold;
+  color: #2494ef;
+  text-decoration: none;
+}
+
 @media (max-width: 800px) {
   .contacto {
     width: auto;
