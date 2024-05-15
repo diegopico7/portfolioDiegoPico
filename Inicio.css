@@ -680,7 +680,7 @@ body.open .menu-burger a {
   margin-bottom: 15px;
 }
 .btn-contacto {
-  text-align: center;
+  /* text-align: center;
   vertical-align: middle;
   display: inline-block;
   padding: 12px 25px;
@@ -691,7 +691,19 @@ body.open .menu-burger a {
   line-height: 1.5;
   font-size: 1rem;
   user-select: none;
-  border: 1px solid #080f15;
+  border: 1px solid #080f15; */
+  text-align: center !important;
+  vertical-align: middle !important;
+  padding: 12px 30px !important;
+  margin-top: 15px !important;
+  margin-right: 15px !important;
+  border-radius: 15px !important;
+  background-color: transparent !important;
+  line-height: 1.5 !important;
+  font-size: 1rem !important;
+  user-select: none !important;
+  border: 1px solid #fff !important;
+  color: #d9dcdc;
 }
 
 .btn-contacto:hover {
